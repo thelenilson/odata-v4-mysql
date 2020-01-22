@@ -459,9 +459,9 @@ odata-v4-parser@0.1.13, odata-v4-parser@^0.1.13:
   version "0.1.13"
   resolved "https://registry.yarnpkg.com/odata-v4-parser/-/odata-v4-parser-0.1.13.tgz#4b5cfef0381cc39c1ca0d53c0bbc825cc655b492"
 
-"odata-v4-parser@https://github.com/thelenilson/odata-v4-parser.git#3ee97559f4ac758304ac2702f3603acecea8397b":
+"odata-v4-parser@https://github.com/thelenilson/odata-v4-parser.git#4e9c73af90056206c2680895fe484f1124a4f508":
   version "0.1.31"
-  resolved "https://github.com/thelenilson/odata-v4-parser.git#3ee97559f4ac758304ac2702f3603acecea8397b"
+  resolved "https://github.com/thelenilson/odata-v4-parser.git#4e9c73af90056206c2680895fe484f1124a4f508"
 
 odata-v4-server@rc:
   version "0.1.14"
