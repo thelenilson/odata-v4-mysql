@@ -66,6 +66,22 @@ export class MySQLVisitor extends Visitor{
 		}
 	}
 
+	protected VisitInExpression(node:Token, context:any){
+		this.Visit(node.value.left, context);
+		this.where += " IN (";
+		this.Visit(node.value.right, context);
+		this.where += ":list)";
+	}
+
+	protected VisitArrayOrObject(node:Token, context:any){
+		if (this.options.useParameters){
+			let value = node.value.value.items.map(item => item.value === 'number' ? parseInt(item.raw, 10) : item.raw);
+			context.literal = value;
+			this.parameters.push(value);
+			this.where += `\$${this.parameters.length}`;
+		}else this.where += (context.literal = SQLLiteral.convert(node.value, node.raw));
+	}
+
 	protected VisitLiteral(node:Token, context:any){
 		if (this.options.useParameters){
 			let value = Literal.convert(node.value, node.raw);

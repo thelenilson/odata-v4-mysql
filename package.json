@@ -1,5 +1,5 @@
 {
-  "name": "odata-v4-mysql",
+  "name": "thelenilson-odata-v4-mysql",
   "version": "0.1.1",
   "description": "OData to MySQL query compiler",
   "main": "build/lib/index.js",
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jaystack/odata-v4-mysql.git"
+    "url": "git+https://github.com/thelenilson/odata-v4-mysql.git"
   },
   "keywords": [
     "OData",
@@ -30,9 +30,9 @@
   "bugs": {
     "url": "https://github.com/jaystack/odata-v4-mysql/issues"
   },
-  "homepage": "https://github.com/jaystack/odata-v4-mysql#readme",
+  "homepage": "https://github.com/thelenilson/odata-v4-mysql#readme",
   "dependencies": {
-    "odata-v4-parser": "0.1.13",
+    "odata-v4-parser": "https://github.com/thelenilson/odata-v4-parser.git#3ee97559f4ac758304ac2702f3603acecea8397b",
     "odata-v4-sql": "^0.1.1"
   },
   "devDependencies": {
@@ -43,6 +43,6 @@
     "mocha": "^3.1.2",
     "mysql": "^2.12.0",
     "odata-v4-server": "rc",
-    "typescript": "^2.0.6"
+    "typescript": "^3.7.4"
   }
 }
