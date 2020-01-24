@@ -1,6 +1,6 @@
 {
   "name": "thelenilson-odata-v4-mysql",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "OData to MySQL query compiler",
   "main": "build/lib/index.js",
   "typings": "build/lib/index",
@@ -32,7 +32,7 @@
   },
   "homepage": "https://github.com/thelenilson/odata-v4-mysql#readme",
   "dependencies": {
-    "odata-v4-parser": "https://github.com/thelenilson/odata-v4-parser.git#f11c03b9f22e53b0997732d434f4240c9dca8612",
+    "odata-v4-parser": "https://github.com/thelenilson/odata-v4-parser.git#2f156c7096b8f4f20c00eb8837dc07471f0c68a5",
     "odata-v4-sql": "^0.1.1"
   },
   "devDependencies": {
